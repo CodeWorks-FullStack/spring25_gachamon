@@ -5,6 +5,7 @@ export class GachamonsController {
   constructor() {
     // observers
     AppState.on('coins', this.toggleDisabledAttributeOnGachamonButton)
+    AppState.on('activeGachamon', this.drawActiveGachamon)
 
     // page load
     console.log('GACHA GACHA GACHAMON controller loaded');
@@ -42,7 +43,6 @@ export class GachamonsController {
   chooseGachamonToSetActive(gachamonName) {
     console.log(`You clicked on ${gachamonName}!`);
     gachamonsService.setActiveGachamon(gachamonName)
-    this.drawActiveGachamon()
   }
 
   rollForGachamon() {

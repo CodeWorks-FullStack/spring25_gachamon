@@ -7,9 +7,9 @@ class CoinsService {
   }
 
   decreaseCoins() {
-    AppState.coins--
+    AppState.coins-- // triggers our observers for 'coins'
     if (AppState.coins < 0) {
-      AppState.coins = 0
+      AppState.coins = 0 // triggers our observers for 'coins'
     }
   }
 }
