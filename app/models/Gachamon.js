@@ -31,20 +31,20 @@ export class Gachamon {
 
   get detailsHTMLTemplate() {
     return `
-    <div class="gachamon-border rounded p-3 biter mb-3">
+    <div class="gachamon-border rounded p-3 mb-3 ${this.type}">
       <div class="text-end fs-1 text-shadow">
-        <span>Barry</span>
+        <span>${this.name}</span>
       </div>
       <hr>
       <div class="text-center active-gachamon-emoji text-shadow">
-        <span>🦈</span>
+        <span>${this.emoji}</span>
       </div>
       <div class="d-flex justify-content-between fs-3">
-        <div class="rounded-pill bg-light px-4">biter</div>
-        <div class="text-shadow">0</div>
+        <div class="rounded-pill bg-light px-4">${this.type}</div>
+        <div class="text-shadow">${this.amountInInventory}</div>
       </div>
       <div class="text-center fs-3">
-        <span>⭐⭐</span>
+        <span>${this.rarity}</span>
       </div>
     </div>
     `

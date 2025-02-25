@@ -22,7 +22,7 @@ export class GachamonsController {
     const gachamon = AppState.activeGachamon
     console.log(`drawing for ${gachamon.name}`);
     const gachamonDetailsElem = document.getElementById('activeGachamonDetails')
-    gachamonDetailsElem.innerText = gachamon.name
+    gachamonDetailsElem.innerHTML = gachamon.detailsHTMLTemplate
   }
 
   chooseGachamonToSetActive(gachamonName) {

@@ -16,6 +16,8 @@ class ObservableAppState extends EventEmitter {
     new Gachamon('terry', '🦖', 'biter', 5)
   ]
 
+  // NOTE this line types whatever is below it as a Gachamon object
+  /*** @type {Gachamon} */
   // NOTE there is no active gachamon on page load
   activeGachamon = null
 }
