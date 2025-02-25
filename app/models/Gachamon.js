@@ -12,6 +12,7 @@ export class Gachamon {
   rarity = 0
   amountInInventory = 0
 
+  // abstraction
   get listHTMLTemplate() {
     return `
     <div class="col-lg-2">
@@ -28,5 +29,6 @@ export class Gachamon {
     `
   }
 }
+
 
 // example of how to use class: new Gachamon('Barry ', '🦈', 'biter', 2)
