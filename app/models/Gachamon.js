@@ -12,6 +12,16 @@ export class Gachamon {
   rarity = 0
   amountInInventory = 0
 
+  get starEmojis() {
+    let emojis = ''
+
+    for (let i = 0; i < this.rarity; i++) {
+      emojis += '⭐'
+    }
+
+    return emojis
+  }
+
   // abstraction
   get listHTMLTemplate() {
     return `
@@ -43,8 +53,8 @@ export class Gachamon {
         <div class="rounded-pill bg-light px-4">${this.type}</div>
         <div class="text-shadow">${this.amountInInventory}</div>
       </div>
-      <div class="text-center fs-3">
-        <span>${this.rarity}</span>
+      <div class="text-center fs-3 text-shadow">
+        <span title="Rarity is ${this.rarity} stars">${this.starEmojis}</span>
       </div>
     </div>
     `
