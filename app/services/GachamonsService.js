@@ -6,7 +6,12 @@ class GachamonsService {
     const gachamons = AppState.gachamons
 
     const foundGachamon = gachamons.find(gachamon => gachamon.name == name)
-    console.log('Here they are!', foundGachamon);
+
+    console.log('before', AppState.activeGachamon);
+
+    AppState.activeGachamon = foundGachamon
+
+    console.log('after', AppState.activeGachamon);
 
   }
 }
