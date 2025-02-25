@@ -17,12 +17,12 @@ export class Gachamon {
     return `
     <div class="col-lg-2">
       <div class="shadow bg-primary text-light p-3 rounded gachamon-border mb-3">
-        <div class="text-end fs-3">
-          <span>Barry</span>
+        <div class="text-end fs-3 text-capitalize">
+          <span>${this.name}</span>
         </div>
         <hr>
         <div class="text-center display-3">
-          <span>🦈</span>
+          <span>${this.emoji}</span>
         </div>
       </div>
     </div>
