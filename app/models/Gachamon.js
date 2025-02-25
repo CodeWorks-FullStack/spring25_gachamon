@@ -16,7 +16,7 @@ export class Gachamon {
   get listHTMLTemplate() {
     return `
     <div class="col-lg-2">
-      <div class="shadow bg-primary text-light p-3 rounded gachamon-border mb-3">
+      <div class="shadow text-light p-3 rounded gachamon-border mb-3 text-shadow ${this.type}">
         <div class="text-end fs-3 text-capitalize">
           <span>${this.name}</span>
         </div>

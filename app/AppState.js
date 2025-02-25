@@ -7,10 +7,12 @@ class ObservableAppState extends EventEmitter {
     new Gachamon('oslo', '🦧', 'jumper', 1),
     new Gachamon('larry', '🦞', 'pincher', 1),
     new Gachamon('gary', '🐌', 'runner', 1),
+    new Gachamon('dairy', '🐄', 'hibernator', 1),
     new Gachamon('barry', '🦈', 'biter', 2),
     new Gachamon('jerry', '🦒', 'biter', 2),
     new Gachamon('beary', '🐻', 'hibernator', 3),
     new Gachamon('kerry', '🦘', 'jumper', 4),
+    new Gachamon('mary', '🐎', 'runner', 4),
     new Gachamon('terry', '🦖', 'biter', 5)
   ]
 }

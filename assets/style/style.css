@@ -20,6 +20,30 @@ hr {
   margin: .2rem;
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 5px black;
+}
+
 .gachamon-border {
   border: thick double black;
+}
+
+.jumper {
+  background-color: goldenrod;
+}
+
+.pincher {
+  background-color: blue;
+}
+
+.runner {
+  background-color: rgb(135, 249, 135);
+}
+
+.hibernator {
+  background-color: rgb(253, 29, 212);
+}
+
+.biter {
+  background-color: red;
 }
