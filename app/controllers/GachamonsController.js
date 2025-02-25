@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { gachamonsService } from "../services/GachamonsService.js";
 
 export class GachamonsController {
   constructor() {
@@ -16,7 +17,8 @@ export class GachamonsController {
     gachamonnsListElem.innerHTML = gachamonListContent
   }
 
-  setActiveGachamon(gachamonName) {
+  chooseGachamonToSetActive(gachamonName) {
     console.log(`You clicked on ${gachamonName}!`);
+    gachamonsService.setActiveGachamon(gachamonName)
   }
 }
