@@ -15,6 +15,9 @@ class ObservableAppState extends EventEmitter {
     new Gachamon('mary', '🐎', 'runner', 4),
     new Gachamon('terry', '🦖', 'biter', 5)
   ]
+
+  // NOTE there is no active gachamon on page load
+  activeGachamon = null
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
