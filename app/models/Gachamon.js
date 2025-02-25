@@ -1,4 +1,3 @@
-
 export class Gachamon {
   constructor(gachamonName, gachamonEmoji, gachamonType, gachamonRarity) {
     this.name = gachamonName
