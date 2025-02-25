@@ -8,14 +8,15 @@ export class GachamonsController {
 
   drawGachamonsList() {
     const gachamons = AppState.gachamons
-    console.log('drawing gachamon!', gachamons);
 
     let gachamonListContent = ''
     gachamons.forEach(gachamon => gachamonListContent += gachamon.listHTMLTemplate)
 
-    console.log(gachamonListContent);
-
     const gachamonnsListElem = document.getElementById('gachamonCardsSection')
     gachamonnsListElem.innerHTML = gachamonListContent
+  }
+
+  setActiveGachamon() {
+    console.log('You clicked on the gachamon!');
   }
 }
