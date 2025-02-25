@@ -3,6 +3,9 @@ import { gachamonsService } from "../services/GachamonsService.js";
 
 export class GachamonsController {
   constructor() {
+    // observers
+    AppState.on('coins', this.toggleDisabledAttributeOnGachamonButton)
+
     // page load
     console.log('GACHA GACHA GACHAMON controller loaded');
     this.drawGachamonsList()
@@ -26,7 +29,8 @@ export class GachamonsController {
   }
 
   toggleDisabledAttributeOnGachamonButton() {
-
+    const gachamonButtonElem = document.getElementById('gachamonButton')
+    gachamonButtonElem.removeAttribute('disabled')
   }
 
   chooseGachamonToSetActive(gachamonName) {
