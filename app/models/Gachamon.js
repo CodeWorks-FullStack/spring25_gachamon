@@ -16,7 +16,7 @@ export class Gachamon {
   get listHTMLTemplate() {
     return `
     <div class="col-lg-2">
-      <div onclick="app.gachamonsController.setActiveGachamon()" class="shadow text-light p-3 rounded gachamon-border mb-3 text-shadow ${this.type}" role="button" title="Click me to see details about ${this.name}">
+      <div onclick="app.gachamonsController.setActiveGachamon('${this.name}')" class="shadow text-light p-3 rounded gachamon-border mb-3 text-shadow ${this.type}" role="button" title="Click me to see details about ${this.name}">
         <div class="text-end fs-3 text-capitalize">
           <span>${this.name}</span>
         </div>

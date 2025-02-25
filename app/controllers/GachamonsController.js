@@ -16,7 +16,7 @@ export class GachamonsController {
     gachamonnsListElem.innerHTML = gachamonListContent
   }
 
-  setActiveGachamon() {
-    console.log('You clicked on the gachamon!');
+  setActiveGachamon(gachamonName) {
+    console.log(`You clicked on ${gachamonName}!`);
   }
 }
