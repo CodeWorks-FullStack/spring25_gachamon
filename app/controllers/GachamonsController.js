@@ -30,7 +30,13 @@ export class GachamonsController {
 
   toggleDisabledAttributeOnGachamonButton() {
     const gachamonButtonElem = document.getElementById('gachamonButton')
-    gachamonButtonElem.removeAttribute('disabled')
+    const coins = AppState.coins
+    if (coins > 0) {
+      gachamonButtonElem.removeAttribute('disabled')
+    }
+    else {
+      gachamonButtonElem.setAttribute('disabled', 'true')
+    }
   }
 
   chooseGachamonToSetActive(gachamonName) {
