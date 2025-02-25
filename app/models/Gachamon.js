@@ -10,7 +10,6 @@ export class Gachamon {
   emoji = ''
   type = ''
   rarity = 0
-  amountInInventory = 0
 
   get starEmojis() {
     let emojis = ''
@@ -51,7 +50,7 @@ export class Gachamon {
       </div>
       <div class="d-flex justify-content-between fs-3">
         <div class="rounded-pill bg-light px-4">${this.type}</div>
-        <div class="text-shadow">${this.amountInInventory}</div>
+        <div class="text-shadow">${this.rarity}</div>
       </div>
       <div class="text-center fs-3 text-shadow">
         <span title="Rarity is ${this.rarity} stars">${this.starEmojis}</span>
