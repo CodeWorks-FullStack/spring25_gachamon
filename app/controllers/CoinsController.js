@@ -3,6 +3,8 @@ import { coinsService } from "../services/CoinsService.js";
 
 export class CoinsController {
   constructor() {
+    AppState.on('coins', this.drawCoins)
+
     console.log('Coins controller is ready!');
   }
 
@@ -15,6 +17,5 @@ export class CoinsController {
   addCoin() {
     console.log('adding coin');
     coinsService.increaseCoins()
-    this.drawCoins()
   }
 }

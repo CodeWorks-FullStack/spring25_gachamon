@@ -38,4 +38,8 @@ export class GachamonsController {
     gachamonsService.setActiveGachamon(gachamonName)
     this.drawActiveGachamon()
   }
+
+  rollForGachamon() {
+    gachamonsService.rollForGachamon()
+  }
 }

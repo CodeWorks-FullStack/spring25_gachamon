@@ -1,6 +1,11 @@
 import { AppState } from "../AppState.js";
+import { coinsService } from "./CoinsService.js";
 
 class GachamonsService {
+  rollForGachamon() {
+    coinsService.decreaseCoins()
+  }
+
   setActiveGachamon(name) {
     console.log(`Setting ${name} as the active gachamon`);
     const gachamons = AppState.gachamons
