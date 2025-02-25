@@ -25,6 +25,10 @@ export class GachamonsController {
     gachamonDetailsElem.innerHTML = gachamon.detailsHTMLTemplate
   }
 
+  toggleDisabledAttributeOnGachamonButton() {
+
+  }
+
   chooseGachamonToSetActive(gachamonName) {
     console.log(`You clicked on ${gachamonName}!`);
     gachamonsService.setActiveGachamon(gachamonName)
