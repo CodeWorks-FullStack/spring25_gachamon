@@ -21,6 +21,8 @@ export class GachamonsController {
   drawActiveGachamon() {
     const gachamon = AppState.activeGachamon
     console.log(`drawing for ${gachamon.name}`);
+    const gachamonDetailsElem = document.getElementById('activeGachamonDetails')
+    gachamonDetailsElem.innerText = gachamon.name
   }
 
   chooseGachamonToSetActive(gachamonName) {
