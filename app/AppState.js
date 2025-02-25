@@ -3,6 +3,8 @@ import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
 class ObservableAppState extends EventEmitter {
+  coins = 0
+
   gachamons = [
     new Gachamon('oslo', '🦧', 'jumper', 1),
     new Gachamon('larry', '🦞', 'pincher', 1),
